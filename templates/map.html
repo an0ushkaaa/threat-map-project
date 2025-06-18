@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Cyber Threat Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- Info Panel -->
+    <div id="info-panel">
+        <h3>Live Attack Info</h3>
+        <ul id="attack-log"></ul>
+    </div>
+
+    <!-- Legend -->
+    <div id="legend">
+        <p><span class="legend-dot" style="background: lime;"></span> Source</p>
+        <p><span class="legend-dot" style="background: red;"></span> Destination</p>
+    </div>
+
+    <!-- Live Cyber News -->
+    <div id="news-panel">
+        <h3>Cyber Attack News</h3>
+        <ul id="news-list">
+            <li>Loading news...</li>
+        </ul>
+    </div>
+
+    <script src="/static/map.js"></script>
+</body>
+</html>
